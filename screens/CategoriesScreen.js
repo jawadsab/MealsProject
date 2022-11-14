@@ -14,7 +14,6 @@ function renderCategoryItems(itemData) {
 function CategoriesScreen() {
   return (
     <FlatList
-      style={styles.flatListContainer}
       data={CATEGORIES}
       keyExtractor={(item) => item.id}
       renderItem={renderCategoryItems}
