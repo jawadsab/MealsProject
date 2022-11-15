@@ -1,6 +1,6 @@
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 
-function CategoryGridTitle({ title, color }) {
+function CategoryGridTitle({ title, color, onPressMealCategory }) {
   return (
     <View
       style={[styles.categoryGridTitleContainer, { backgroundColor: color }]}
@@ -8,6 +8,7 @@ function CategoryGridTitle({ title, color }) {
       <Pressable
         android_ripple={{ color: '#EDE7D9' }}
         style={styles.pressbleContainer}
+        onPress={onPressMealCategory}
       >
         <View style={styles.textWrapperContainer}>
           <Text style={styles.titleText}>{title}</Text>
